@@ -1,0 +1,713 @@
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  background-image: linear-gradient(135deg, #0a0a0a 25%, rgba(0, 24, 42, 0.9) 100%);
+  background-size: 400% 400%;
+  animation: backgroundGradient 20s linear infinite;
+}
+
+/* Header styles */
+
+
+
+
+/* Course Containers */
+.course-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background: linear-gradient(135deg, #00192d, #00081a);
+}
+
+
+/* Important */
+.course-info {
+  flex: 1;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Course Info */
+.course-info {
+  flex: 1;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-right: 40px; /* Add a gap between the image and text */
+}
+
+.course-info h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.course-info p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+/* Course Image */
+.course-image {
+  width: 360px;
+  height: 510px;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+                                                                  /* till now perfect */
+
+
+
+/* Course Details */
+
+
+
+
+
+
+.benefits h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Module Card Four (Equivalent to Course Info) */
+
+
+
+
+
+/* Benefit Item important*/
+.benefit-item {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background: linear-gradient(135deg, #00192d, #00081a);
+}
+
+/* Emoji important*/
+.emoji {
+  font-size: 46px;
+  margin-right: 20px;
+  color: #fff;
+}
+
+
+
+
+/* Course Container Animation */
+.course-container {
+  animation: slideInLeft 1s ease;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Course Ribbon Animation */
+.course-ribbon {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Course Info Animation */
+.course-info {
+  animation: slideInRight 1s ease;
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Benefit Item Animation */
+.benefit-item {
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Module Details Animation */
+.module-details {
+  animation: zoomIn 1s ease;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+/* Adding Transitions */
+
+.benefit-item li {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 10px;
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.benefit-item.active li {
+  transform: translateX(10px);
+}
+
+
+/* ... Previous CSS rules ... */
+
+/* Adding animation and transitions */
+
+
+
+@keyframes backgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animated Ribbon */
+.course-ribbon {
+  animation: ribbonFlare 4s ease infinite;
+}
+
+@keyframes ribbonFlare {
+  0% {
+    transform: translateY(-50%) rotate(45deg) scale(0.8);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50%) rotate(45deg) scale(1);
+    opacity: 0.8;
+  }
+}
+
+
+
+/* Trainer Info List Animation */
+.trainer-info-list li {
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes backgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animated Ribbon */
+.course-ribbon {
+  animation: ribbonFlare 8s ease infinite;
+}
+
+@keyframes ribbonFlare {
+  0%, 100% {
+    transform: translateY(-50%) rotate(45deg) scale(0.8);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+
+/* Trainer Info List Animation */
+.trainer-info-list li {
+  animation: fadeInOut 5s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes animatedCircles {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Animated Dots in Background */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(rgba(255, 255, 255, 0.05) 10%, transparent 50%);
+  background-size: 300% 300%;
+  animation: animatedDots 8s linear infinite;
+  z-index: -1;
+}
+
+@keyframes animatedDots {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* ... Previous CSS rules ... */
+
+/* Transparent Card Animations */
+.course-container {
+  /* ... Previous styles ... */
+  position: relative; /* Required for child animations */
+}
+
+.course-info {
+  /* ... Previous styles ... */
+  animation: fadeInFromBottom 1s ease-in-out;
+  animation-delay: 0.3s;
+}
+
+
+
+.module-details {
+  /* ... Previous styles ... */
+  animation: fadeInFromRight 1s ease-in-out;
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ... Rest of the CSS rules ... */
+/* ... Previous CSS rules ... */
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.course-container {
+  /* ... Previous styles ... */
+  position: relative; /* Required for child animations */
+}
+
+.course-info {
+  /* ... Previous styles ... */
+  animation: fadeInFromBottom 1s ease-in-out, shimmer 2s infinite linear;
+  animation-delay: 0.3s;
+  background-image: linear-gradient(135deg, #00192d, #00213b, #00192d);
+  background-size: 1000px 100%;
+}
+
+
+
+.module-details {
+  /* ... Previous styles ... */
+  animation: fadeInFromRight 1s ease-in-out, shimmer 2s infinite linear;
+  animation-delay: 0.6s;
+  background-image: linear-gradient(135deg, #00192d, #00213b, #00192d);
+  background-size: 1000px 100%;
+}
+
+/* ... Rest of the CSS rules ... */
+/* ... Previous CSS rules ... */
+
+/* Benefit Item */
+.benefit-item {
+  /* ... Previous styles ... */
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+ /* ... Don't Delete ... */
+.benefit-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0a0a0a, #00192d);
+  border-radius: 20px;
+  opacity: 0.9;
+  z-index: -1;
+  transform: translateZ(-10px);
+}
+
+.benefit-item:hover::before {
+  opacity: 1;
+}
+
+.module-info {
+ 
+  position: relative;
+  z-index: 1;
+}
+
+.benefit-item h3 {
+  /* ... Previous styles ... */
+  margin-bottom: 20px;
+}
+
+.benefit-item li {
+  /* ... Previous styles ... */
+  margin-bottom: 15px;
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  color: #f5f5f5;
+}
+
+.benefit-item li::before {
+  content: "\2713"; /* Checkmark Unicode character */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #37b6ff; /* Color of the checkmark */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.benefit-item.active li::before {
+  opacity: 1;
+}
+
+.benefit-item li::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #37b6ff; /* Highlight color */
+}
+
+
+/* Module Card Four (Equivalent to Course Info) */
+.module-cardfour {
+  /* ... Previous styles ... */
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+.module-cardfour::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0a0a0a, #00192d);
+  border-radius: 20px;
+  opacity: 0.9;
+  z-index: -1;
+  transform: translateZ(-10px);
+}
+
+.module-cardfour:hover::before {
+  opacity: 1;
+}
+
+.module-info {
+  /* ... Previous styles ... */
+  position: relative;
+  z-index: 1;
+}
+
+.module-cardfour h1 {
+  /* ... Previous styles ... */
+  margin-bottom: 20px;
+}
+
+.module-cardfour li {
+  /* ... Previous styles ... */
+  margin-bottom: 15px;
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  color: #f5f5f5;
+}
+
+.module-cardfour li::before {
+  content: "\2713"; /* Checkmark Unicode character */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #37b6ff; /* Color of the checkmark */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.module-cardfour.active li::before {
+  opacity: 1;
+}
+
+.module-cardfour li::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #37b6ff; /* Highlight color */
+}
+
+
+/* Module Card Four (Equivalent to Course Info) */
+.module-cardfour {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background: linear-gradient(135deg, #00192d, #00081a);
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+.module-cardfour::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0a0a0a, #00192d);
+  border-radius: 20px;
+  opacity: 0.9;
+  z-index: -1;
+  transform: translateZ(-10px);
+}
+
+.module-cardfour:hover::before {
+  opacity: 1;
+}
+
+.module-info {
+  flex: 1;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.module-cardfour h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.module-cardfour p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.module-cardfour li {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 15px;
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.module-cardfour li::before {
+  content: "\2713"; /* Checkmark Unicode character */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #37b6ff; /* Color of the checkmark */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.module-cardfour.active li::before {
+  opacity: 1;
+}
+
+.module-cardfour li::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #37b6ff; /* Highlight color */
+}
+
+/* ... Rest of the CSS rules ... */
